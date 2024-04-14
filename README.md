@@ -1,5 +1,5 @@
 # occlib
-The occult C backend.
+The occult C backend, using tgc as a garbage collector.
 
 # How to use
 
