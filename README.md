@@ -24,10 +24,3 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 ```
-
-NOTES: 
-
-Personal use/ 
-
-In the compiler itself, we can log the types inside the function arguments (using std::vector<std::string> symbols;) and check it against the actual func itself, as we wont have variadic.
-this will help figure out what type we need to use for each array... (this is a huge hassle) 
