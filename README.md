@@ -1,6 +1,9 @@
 # occlib
 The occult C backend, using tgc as a garbage collector.
 
+# Issues now
+[#1](https://github.com/occultlang/occlib/issues/1)
+
 # How to use
 
 ## Dynamic arrays
