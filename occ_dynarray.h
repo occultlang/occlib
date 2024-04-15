@@ -52,6 +52,11 @@ void add_self(dyn_array* array, dyn_array* data);
     default: get_self \
 )(vec, index)
 
+#define CAST_TYPE_NUM 0
+#define CAST_TYPE_REALNUM 0.1
+#define CAST_TYPE_STRING "0ab1a"
+#define CAST_TYPE_SELF // TODO
+
 #define DYN_VECTOR_SIZE(vec) ((vec)->size)
 
 #endif /* OCC_DYNARRAY_H */
