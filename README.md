@@ -28,8 +28,8 @@ int main(int argc, char *argv[]) {
 Basic multidimensional array of
 
 ```c
-int[2][2] ={ {1, 2},
-             {3, 4} };
+int array[2][2] = { {1, 2},
+                    {3, 4} };
 ```
 
 ```c
