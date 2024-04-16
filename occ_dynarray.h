@@ -756,10 +756,19 @@ void add_self(dyn_array* array, dyn_array* data) {
     default: get_self \
 )(vec, index)
 
-#define CAST_TYPE_NUM 0
-#define CAST_TYPE_REALNUM 0.1
-#define CAST_TYPE_STRING "0ab1a"
-#define CAST_TYPE_SELF typeof(dyn_array*) // TODO: fix this
+#define DYN_VECTOR_SET(vec, index, data) _Generic((data), \
+    int: set_num, \
+    long: set_num, \
+    char*: set_str, \
+    float: set_rnum, \
+    double: set_rnum, \
+    default: set_self \
+)(vec, index, data)
+
+#define TYPE_NUM 0
+#define TYPE_RNUM 0.1
+#define TYPE_STRING "0ab1a"
+#define TYPE_SELF NULL // just a ptr
 
 #define DYN_VECTOR_SIZE(vec) ((vec)->size)
 
