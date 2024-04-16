@@ -60,7 +60,7 @@ int main(int argc, char *argv[]) {
     for (int row = 0; row < DYN_VECTOR_SIZE(array); row++) {
         dyn_array* row_array = DYN_VECTOR_AT(array, row, row_array);
         for (int col = 0; col < DYN_VECTOR_SIZE(row_array); col++) {
-            printf("%ld ", DYN_VECTOR_AT(row_array, col, CAST_TYPE_NUM));
+            printf("%ld ", DYN_VECTOR_AT(row_array, col, TYPE_NUM));
         }
         printf("\n");
     }
